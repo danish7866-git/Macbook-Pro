@@ -67,7 +67,7 @@ const Navbar = () => {
       .from(
         btnRef.current.children,
         {
-          y: -20,
+          x: 50,
           rotate: -360,
           duration: 1.5,
           opacity: 0,
@@ -90,7 +90,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white px-5 lg:px-20 lg:py-5 py-3 relative">
+    <div className="bg-black text-white px-5 lg:px-20 lg:py-5 py-5 relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <RiAppleFill ref={logoRef} color="rgba(173,184,194,1)" size={22} />

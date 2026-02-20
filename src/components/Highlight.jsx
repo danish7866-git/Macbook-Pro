@@ -36,6 +36,39 @@ const Highlight = () => {
         end:"bottom 5%",
         scrub:true,
       }
+    }),
+    gsap.from(".text",{
+      y:50,
+      duration:2,
+      opacity:0,
+      scrollTrigger:{
+        trigger:'.text',
+        start:"top 85%",
+        end:"bottom 75%",
+        scrub:true,
+      }
+    }),
+    gsap.from(".text-1",{
+      y:50,
+      duration:2,
+      opacity:0,
+      scrollTrigger:{
+        trigger:'.text-1',
+        start:"top 85%",
+        end:"bottom 75%",
+        scrub:true,
+      }
+    }),
+    gsap.from(".text-2",{
+      y:50,
+      duration:2,
+      opacity:0,
+      scrollTrigger:{
+        trigger:'.text-2',
+        start:"top 85%",
+        end:"bottom 75%",
+        scrub:true,
+      }
     })
   })
   return (
@@ -43,7 +76,7 @@ const Highlight = () => {
 
       {/* Heading */}
       <div className="heading max-w-ful sticky top-5 max-h-auto mx-auto border rounded-t-4xl pb-15 bg-[#FAF9F6] px-6 ">
-        <h1 className="text-3xl font-bold text-center pt-6 lg:text-6xl lg:pt-10 lg:text-left">
+        <h1 className="text text-3xl font-bold text-center pt-6 lg:text-6xl lg:pt-10 lg:text-left">
           Get the highlights.
         </h1>
       </div>
@@ -53,7 +86,7 @@ const Highlight = () => {
       <div className="bg-black card-1 rounded-t-4xl -mt-7 sticky top-7 text-white py-16 lg:pt-5">
         <div className="max-w-full mx-auto px-6 lg:pb-4 text-center">
 
-          <h2 className="font-bold p-2 text-xl lg:py-10 lg:max-w-full lg:text-5xl max-w-3xl mx-auto bg-linear-to-r from-white to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(59,130,246,0.4)]">
+          <h2 className="text-1 font-bold p-2 text-xl lg:py-10 lg:max-w-full lg:text-5xl max-w-3xl mx-auto bg-linear-to-r from-white to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(59,130,246,0.4)]">
             Longest battery life ever in a Mac. Up to 24 hours. Hit the road.
           </h2>
 
@@ -74,15 +107,15 @@ const Highlight = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white card-2 sticky top-5 rounded-t-4xl py-16 lg:py-10">
+      <div className="bg-white card-2 sticky top-5 rounded-t-4xl py-16 lg:py-[0.1vw]">
         <div className="max-w-full mx-auto text-center">
 
-          <h2 className="font-bold text-xl lg:px-2 lg:text-[2vw] lg:max-w-full leading-tight max-w-4xl mx-auto">
+          <h2 className="text-2 font-bold text-xl lg:pt-10 lg:px-2 lg:text-[2.5vw] lg:max-w-full leading-tight max-w-4xl mx-auto">
             Live Activities and the Phone app. Stay in touch without touching your phone.
           </h2>
 
           <div
-            className="mt-10 w-full h-[70vw] lg:h-[40vw] rounded-4xl bg-cover bg-center"
+            className="mt-10 w-full h-[70vw] lg:h-[42vw] rounded-t-4xl bg-cover bg-center"
             style={{ backgroundImage: "url('Images/highlights-3.0.jpg')" }}
           />
 

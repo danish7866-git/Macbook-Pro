@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Highlight from './components/Highlight'
 import Showcase from './components/Showcase'
+import Performance from './components/Performance'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero/>
       <Highlight/>
       <Showcase/>
+      <Performance/>
     </div>
   )
 }

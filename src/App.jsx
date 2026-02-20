@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Highlight from './components/Highlight'
-import Performance from './components/Performance'
+import Showcase from './components/Showcase'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Highlight/>
-      <Performance/>
+      <Showcase/>
     </div>
   )
 }
